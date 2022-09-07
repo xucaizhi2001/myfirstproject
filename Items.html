@@ -1,0 +1,321 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Items</title>
+
+
+
+</head>
+
+<body>
+<style>
+	ul{
+		list-style-type:none;
+		}
+	ul li{
+		float:left;
+		htight:auto;
+		word-break:break-all;
+		word-wrap:break-word;
+		margin:10px;
+		}
+		
+.main2{
+	/*text-align: center;*/
+	background-color: #fff;
+	border-radius: 20px;
+	width: 1100px;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translate(-50%,0);
+}
+
+#layout{
+	width:1150px;
+	/*border:2px solid #ccc;*/
+	padding:2px;
+	overflow:auto;
+	zoom:1;
+	diaplay:inline;
+	margin-left:0px;
+	margin-right:0px;
+	margin:0 auto;
+	text-align:center;
+	}
+#layout ul{
+	list-style-type:none;}
+#layout li {	
+	list-style-type: square;
+	no-repeat 0px 4px;
+	padding-left:0px;
+	word-break:break-all;
+	word-wrap:break-word;
+	list-style:none;}
+body{
+	margin:0 auto;
+	font-size:12px;
+	font-family:Verdana;
+	line-height:1.5;}
+	
+ul,dl,dt,dd,h1,h2,h3,h4,h5,h6,form{padding:0;margin:0;}
+img{border:0px;}
+
+#layout ul li a img {
+	width:200px;
+	height:200px;
+	padding: 0px;
+	/*border: 1px solid #elelel;*/
+	margin:0 
+	display:block;}
+a{color:#05a;text-decoration：none;}
+a:hover{color:#f00;}
+#layout ul li {
+	float: left;
+	width: 210px;
+	height:265px;
+	margin-top: 10px;
+	margin-right: 5px;
+	margin-bottom: 0px;
+	margin-left: 5px;
+	text-align: center;
+	/*background-color:#E9E9E9;*/
+	border: 1px solid #CCC;
+	word-break:break-all;
+	word-wrap:break-word;}
+#layout ul li a {
+	display: block;
+	text-decoration: none;
+	color:#000;
+	font-size:14px;
+	text-align:left;
+	margin:5px;
+	
+}
+#layout ul li>.price{
+	color:#F00;
+	font-size:24px;
+	text-align:right;
+	
+	}
+#layout ul li a：hover img {
+	padding: 0px;
+	border: 0px solid #FF6600;
+}
+
+
+
+#Classify ul{
+     display:flex;
+	 flex-direction: row;
+	 justify-content: left;
+	 width:1100px;
+	 height:40px;
+	 border:solid 1px #CCC;
+	 border-bottom-width: 0px;
+	}
+
+#Classify li{
+	float:left;
+	padding:0px;
+	margin:0 0;
+	margin-right:10px;
+	list-style:none;
+	font-size:12px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+		}
+#firstLi{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align:center;
+	background-color:#E4E4E4;
+	width:120px;
+	font-weight:bold;
+	}
+
+/*搜索框样式*/
+.bar2 {background: #FFF;}
+        .bar2 input, .bar2 button {
+            border-radius: 3px;
+        }
+        .bar2 input {
+            background: #FFF;
+			height:40px;
+			width:200px;
+        }
+        .bar2 button {
+            height: 40px;
+            width: 100px;
+            top: 8px;
+            right: 8px;
+            background: #D8D896;
+			
+        }
+        .bar2 button:before {
+			font-family:"黑体";
+            color: #333;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+</style>
+
+<div id="All" class = "main2">
+	<div style="height:30px;">
+    	<p style="">大学城二手书</p>
+    </div>
+  <div id="Search1" style="text-align: center;height:100px;" class="bar2">
+  <div style="height:30px;"></div>
+  <form>
+  <input type = "text" name = "content" placeholder="请输入您要搜索的内容...">
+  <button type = "submit" value = "search" name = "searchButton">搜索</button>
+  </form>
+  </div>
+  
+  <div id = "Classify">
+  
+  	<ul>
+    	<li id="firstLi">出版社名称</li>
+        <li>清华大学出版社</li>
+        <li>机械工业出版社</li>
+        <li>电子工业出版社</li>
+        <li>人民邮电出版社</li>
+        <li>中国电力出版社</li>        
+        <li>中国电力出版社</li>        
+        <li>中国电力出版社</li>        
+        <li>中国电力出版社</li>
+    </ul>
+    <ul>
+    	<li id="firstLi">所在学校</li>
+    	<li>四川轻化工大学</li>
+        <li>西华大学</li>
+        <li>宜宾学院</li>
+        <li>成都工业学院</li>
+        <li>电子科技大学</li>
+        <li>成都理工大学</li>
+        <li>四川外国语学院</li>
+        
+    </ul>
+    
+    
+    <ul>
+    	<li id="firstLi">专业</li>
+    	<li>计算机科学与技术</li>
+        <li>软件工程</li>
+        <li>机械工程</li>
+        <li>自动化</li>
+        <li>材料工程与科学</li>
+        
+    </ul>
+  </div>
+  
+  
+  <div id="SiftItem" style="width:1200px;clear:both;">
+  <form>
+  排序:
+  <select name = "Sort">
+	<option value = "Synthesis" selected="selected">综合</option>
+    <option value = "Price">价格</option>
+    <option value = "Sales">销量</option>
+    <option value = "Credit">信用</option>
+  </select>
+  
+  <input type="radio" name = "SortTo" value = "up">升序
+  <input type="radio" name = "SortTo" value = "down">降序  
+  
+  成色：
+  <select name = "Sort">
+	<option value = "Synthesis" selected="selected">全新</option>
+    <option value = "Price">九五新</option>
+    <option value = "Sales">九成新</option>
+    <option value = "Credit">八成新</option>
+  </select>
+  <input type="radio" name = "SortTo" value = "up">升序
+  <input type="radio" name = "SortTo" value = "down">降序
+  </form>
+  
+  
+  
+  </div>
+  
+  <div id="layout">
+  	<!--下面是把图片定义成li标签，并设置了高度和宽度，只需要把图片所放位置src的路径和图片名称001.jpg修改即可-->
+<ul>
+<li>
+<a href="IntemInfo.html"><img src="images/items/1.jpg"width="70" height="70"/>C primierPlus</a>
+<a class="price">99.9</a>
+</li>
+
+
+<li>
+<a href="IntemInfo.html"><img src="images/items/2.jpg"width="70" height="70"/>C primierPlus</a>
+<a class="price">99.9</a>
+</li>
+
+<li>
+<a href="IntemInfo.html"><img src="images/items/3.jpg"width="70" height="70"/>C primierPlus</a>
+<a class="price">99.9</a>
+</li>
+
+<li>
+<a href="IntemInfo.html"><img src="images/items/4.jpg"width="70" height="70"/>C primierPlus</a>
+<a class="price">99.9</a>
+</li>
+
+<li>
+<a href="IntemInfo.html"><img src="images/items/5.jpg"width="70" height="70"/>C primierPlus</a>
+<a class="price">99.9</a>
+</li>
+
+<li>
+<a href="IntemInfo.html"><img src="images/items/6.jpg"width="70" height="70"/>C primierPlus</a>
+<a class="price">99.9</a>
+</li>
+
+<li>
+<a href="IntemInfo.html"><img src="images/items/7.jpg"width="70" height="70"/>C primierPlus</a>
+<a class="price">99.9</a>
+</li>
+
+<li>
+<a href="IntemInfo.html"><img src="images/items/8.jpg"width="70" height="70"/>C primierPlus</a>
+<a class="price">99.9</a>
+</li>
+
+<li>
+<a href="IntemInfo.html"><img src="images/items/9.jpg"width="70" height="70"/>C primierPlus</a>
+<a class="price">99.9</a>
+</li>
+
+<li>
+<a href="IntemInfo.html"><img src="images/items/10.jpg"width="70" height="70"/>C primierPlus</a>
+<a class="price">99.9</a>
+</li>
+
+<li>
+<a href="IntemInfo.html"><img src="images/items/11.jpg"width="70" height="70"/>C primierPlus</a>
+<a class="price">99.9</a>
+</li>
+
+<li>
+<a href="IntemInfo.html"><img src="images/items/3.jpg"width="70" height="70"/>C primierPlus</a>
+<a class="price">99.9</a>
+</li>
+
+<li>
+<a href="IntemInfo.html"><img src="images/items/1.jpg"width="70" height="70"/>C primierPlus</a>
+<a class="price">99.9</a>
+</li>
+
+
+ 
+</ul>
+  
+  </div>
+</div>
+</body>
+</html>

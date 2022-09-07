@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+            function showDiv(str) {
+                var divs = []; 
+                for(var i = 0;i < 3;i++) {
+                    divs[i] = document.getElementById("div" + i);
+                    divs[i].style.display = "none";
+                }
+                document.getElementById(str).style.display = "block";               
+            }
+        </script>
+	
+	
+	<style>
+	/*
+*{padding:0;margin:0;border:none;text-decoration:none;}/*删除浏览器中带有的默认格式*/
+#img {
+	width: 400px;
+	height: 400px;
+	margin: 0 auto;
+	padding: 0px;
+	border: 1px solid red;
+	/* 设置相对位置，只有将外层元素设置相对位置，子元素设置绝对位置，才能将子元素放置在父元素内部的特定位置 */
+	position: relative;
+}
+#img>.lleft {
+	width: 23px;
+	height: 40px;
+	/* 设置子元素绝对位置 */
+	position: absolute;
+	left: 0px;
+	top: 48%;
+}
+#img>.rright {
+	width: 28px;
+	height: 42px;
+	position: absolute;
+	right: 0px;
+	top: 48%;
+}
+
+		
+.main2{
+	/*text-align: center;*/
+	background-color: #fff;
+	border-radius: 20px;
+	width: 900px;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translate(-50%,0);
+	overflow:hidden;
+	margin-top:100px;
+}
+
+
+#divBottom{
+	width:900px;
+	height:auto;	
+	margin:0 auto;
+	text-align:center;
+	/*清除两边浮动*/
+	clear:both;
+	font-size:0px;
+	}
+.itemInfoBar{
+	width:900px;
+	height:auto;
+	margin:0 auto;
+	text-align:left;
+	}
+
+.buttonStyle{
+	width:100px;
+	height:60px;
+	border:none;
+	margin-left:0px;
+	margin-right:5px;
+	margin-top:10px;
+	background-color:#CCC;
+	font-size:24px;
+	text-align:center;
+	color:white;
+
+	background:#333;
+	
+	width:100px;
+
+	/*border-radius:25px;*/
+
+	-moz-border-radius:25px; /* 老的 Firefox */
+	}
+	
+#div0{
+	background-color: darkgray;
+	width:800px;
+	height:auto;
+	/*overflow:scroll;*/
+	}
+#div1{
+	
+	width:800px;
+	height:auto;
+	display:none;
+	clear:both;
+	padding:20px;
+	}
+#div1 ul
+        {
+	height:auto;
+    list-style: none;
+    margin: 0px;
+	padding: 0px;
+	text-align: left;
+	font-size:20px;
+	text-align:left;
+	clear:both;
+        }
+#div1 ul li{
+	margin-left:0px;
+	padding:4px;
+	border: 0.5px solid #ADADAD;
+	border-bottom:none;
+	font-size:16px;
+	color:#666;
+	}
+
+#div2{
+	background-color: darkseagreen;
+	width:800px;
+	height:100px;
+	clear:both;
+	}
+
+
+
+#baseInfo ul{
+	list-style-type:none;
+	background-color:#fff;
+	text-align:left;
+	padding:10px;
+	
+	}
+#baseInfo ul li{
+	margin-left:0px;
+	padding:4px;
+	border: 0.5px solid #ADADAD;
+	border-bottom:none;
+	font-size:16px;
+	color:#666;
+	}
+
+.lastLi{
+	border-bottom:solid;
+	}
+.baseInfo{
+	
+	width:400px;
+	  /*此元素会作为一个表格单元格显示
+            （类似 <td> 和 <th>）*/
+            display: table-cell;
+            /*垂直居中 */
+            vertical-align: middle;
+            /*水平居中*/
+            /*text-align: center;*/
+			margin-left:30px;
+			float:left;
+	}
+
+#topDiv{
+	background-color: #ccc;
+	border-radius: 20px;
+	width: 900px;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translate(-50%,0);
+	overflow:hidden;
+	}
+/*搜索框样式*/
+.bar2 {background: #FFF;}
+        .bar2 input, .bar2 button {
+            border-radius: 3px;
+        }
+        .bar2 input {
+            background: #FFF;
+			height:40px;
+			width:200px;
+        }
+        .bar2 button {
+            height: 40px;
+            width: 100px;
+            top: 8px;
+            right: 8px;
+            background: #D8D896;
+			
+        }
+        .bar2 button:before {
+			font-family:"黑体";
+            color: #333;
+            font-size: 20px;
+            font-weight: bold;
+        }
+		
+
+/*搜索框样式*/
+.bar2 {background: #FFF;
+text-align:center;
+}
+        .bar2 input, .bar2 button {
+            border-radius: 3px;
+        }
+        .bar2 input {
+            background: #FFF;
+			height:40px;
+			width:200px;
+        }
+        .bar2 button {
+            height: 40px;
+            width: 100px;
+            top: 8px;
+            right: 8px;
+            background: #D8D896;
+			
+        }
+        .bar2 button:before {
+			font-family:"黑体";
+            color: #333;
+            font-size: 20px;
+            font-weight: bold;
+        }
+</style>
+    </head>
+    
+    <body>
+
+<div id="topDiv">
+<form class="bar2">
+  <input type = "text" name = "content" placeholder="请输入您要搜索的内容...">
+  <button type = "submit" value = "search" name = "searchButton">搜索</button>
+  </form>
+
+</div>
+
+<div class="main2">
+	<div id="img" style="float:left;width:400;">
+    
+      <div id="BJ"> 
+      <img src="images/1.jpg" id="imgs" width="400" height="400" /> 
+      </div>
+      <div class="lleft"> <img src="1.png" alt="无法显示"> </div>
+      <div class="rright"> <img src="2.png" alt="无法显示"> </div>
+	
+    </div>
+    
+    <div class="baseInfo" id="baseInfo">
+    <p style="font-size:24px;"><strong>计算机操作系统(第四版)(汤小丹) 汤小丹 西安电子科技</strong></p>  
+  <ul>
+  	<li>作者：[美]史蒂芬 普拉达</li>
+    <li>出版社：人民邮电出版社</li>
+    <li>出版时间：2021</li>
+    <li>装帧：平装</li>
+    <li>成色：全新</li>
+    <li style="border-bottom:0.5px solid #ADADAD;">学校：四川轻化工大学</li>
+  </ul>
+  <form style="text-align:end;">
+ 
+ 
+ 	<button type="button">-</button>
+  	<input type="text" style="width:20px;text-align:center;" value="1">
+    <button type="button">+</button>
+    
+  	<input class="buttonStyle" style="width:140px;" type="button" id="but1" value="加入购物车">
+    <input class="buttonStyle" type="button" id="but2" value="购买">
+  </form>
+  
+    </div>
+	
+    
+    <div id="divBottom">
+    	<div class="itemInfoBar">
+        
+        <button type="button" onclick="showDiv('div0')" class="buttonStyle">详情</button>
+		<button type="button" onclick="showDiv('div1')" class="buttonStyle">参数</button>
+		<button type="button" onclick="showDiv('div2')" class="buttonStyle">评价</button>
+        </div>
+		
+		<div id="div0">
+       
+        <img src="images/itemsInfo.jpg" width="800">
+        
+        </div>
+        
+        <div id="div1" >			
+           <ul>
+            	<li>出版社： 人民邮电出版社</li>
+                <li>ISBN：9787115006028</li>
+                <li>版次：5</li>
+                <li>商品编码：12960871</li>
+                <li>品牌：人民邮电出版社</li>
+                <li>包装：平装</li>
+                <li>开本：16开</li>
+                <li>出版时间：2021-08-01</li>
+                <li>用纸：胶版纸</li>
+                <li>页数：873套装</li>
+                <li>数量：2</li>
+                <li>字数：1600000</li>
+                <li>正文语种：中文</li>
+            </ul>
+        </div>
+        
+        <div id="div2">
+    		
+        </div>
+		
+		
+		
+	</div>
+    
+</div>
+
+
+
+
+
+    
+    
+    
+<script>
+        var index=0;
+        var img_data=['images/1.jpg','images/2.jpg'];
+        // 获得相应元素对象
+        var rright=document.getElementsByClassName("rright")[0];
+        var llef=document.getElementsByClassName("lleft")[0];
+        var img=document.getElementById("imgs");
+        // 通过对象的单击事件触动函数调用函数实现图片切换
+        rright.onclick=function(){
+            index++;
+            if(index==img_data.length) index=0;
+            img.setAttribute('src',img_data[index]);
+        }
+        llef.onclick=function(){
+            if(index==0) index=img_data.length;
+            index--;
+            img.setAttribute('src',img_data[index]);
+        }
+		
+		
+		
+    </script>
+    
+    
+</body>
+</html>
